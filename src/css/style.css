@@ -49,30 +49,30 @@ body {
 
 .logo img {
     float: left;
-    margin-top: 45px;
+    padding-top: 45px;
     position: absolute;
 }
 
 .phone {
-    margin-top: 60px;
-    float: right;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    display: block;
 }
 
-.phone a {
+a.phone {
     text-decoration: none;
     color: #707070;
-}
-
-.phone li {
     font-family: "DIN Light Alternate", sans-serif;
 }
 
-li.phone-number1 {
+span.phone-number1 {
     font-size: 18px;
 }
 
-li.phone-number2 {
+span.phone-number2 {
     font-size: 30px;
+    display: block;
 }
 
 
@@ -108,6 +108,7 @@ h2 {
     color: #646464;
     font-size: 18px;
     font-family: "dincyr regular";
+    margin: 0;
 }
 
 p {
@@ -123,31 +124,21 @@ p {
     margin-top: 47px;
 }
 
-.list-1,
-.list-2,
-.list-3 {
+.list-item {
     display: inline-block;
     min-height: 100%;
     width: 225px;
     vertical-align: top;
 }
 
-.list-1 p {
+.name {
     display: inline-block;
     vertical-align: top;
     margin: 0;
-}
-
-.list-2 li p {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0;
-}
-
-.list-3 li p {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0;
+    color: #646464;
+    font-size: 11px;
+    line-height: auto;
+    font-family: "Verdana",
 }
 
 .img {
@@ -181,16 +172,17 @@ li.sidebar-item {
     width: 200px;
 }
 
-.sidebar-item:hover {
+.sidebar-item a:hover {
     background-color: #707070;
     color: #fff;
 }
 
-.left-sidebar li {
+.left-sidebar li a {
     font-family: "DIN Light Alternate", sans-serif;
     font-size: 40px;
     color: #646464;
     line-height: 1;
+    text-decoration: none;
 }
 
 
@@ -205,24 +197,17 @@ li.sidebar-item {
     padding-top: 36px;
 }
 
-.adress a {
+.adress a
+{
     color: #707070;
-    text-decoration: none;
+    text-decoration: none;  
 }
-
-.adress {
-    width: 100px;
+.adress
+.job {
+    display: inline-block;
+    position: relative;
 }
 
 .job a {
     color: #707070;
-}
-
-.job {
-    width: 100px;
-    display: block;
-    position: absolute;
-    left: 100px;
-    top: 36px;
-    margin-left: 20px;
 }
