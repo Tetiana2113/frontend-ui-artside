@@ -31,14 +31,11 @@ body {
 ol, ul, li{
 	list-style: none;
 }
-ul,nav {
-    margin:0;
-    padding:0;
-    border:0;
+
 
    
    
-}
+
 
 /**
  * Add the correct display in IE 9-.
