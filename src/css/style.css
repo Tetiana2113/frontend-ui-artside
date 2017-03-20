@@ -12,8 +12,6 @@ html {
     src: url('../fonts/DIN LightAlternate Regular.otf') format('opentype');
 }
 
-
-
 article,
 footer,
 header,
@@ -22,13 +20,11 @@ nav,
     display: block;
 }
 
-
-
 body {
     font-size: 11px;
-    font-family: "Verdana","Arial",sans-serif;
+    font-family: "Verdana", "Arial", sans-serif;
     width: 100%;
-    min-height : 100%;
+    min-height: 100%;
     background-image: url(../images/bg-body.jpg);
 }
 
@@ -39,37 +35,41 @@ body {
     height: auto !important;
     height: 100%;
 }
+
 .article p {
     margin: 0 0 1em;
     color: #646464;
     font-size: 11px;
     line-height: auto;
-    font-family: "Verdana","Arial",sans-serif;
+    font-family: "Verdana", "Arial", sans-serif;
 }
 
 h1,
 h2 {
-   margin: 0 0 18px;
-   color: #646464;
-   font-size: 18px;
-   font-family: "dincyr regular","Verdana","Arial",sans-serif;
-   font-weight: 300;
+    margin: 0 0 18px;
+    color: #646464;
+    font-size: 18px;
+    font-family: "dincyr regular", "Verdana", "Arial", sans-serif;
+    font-weight: 300;
     text-transform: uppercase;
 }
+
 a {
     cursor: pointer;
 }
-ul{
-    padding:0;
+
+ul {
+    padding: 0;
     margin: 0;
 }
+
+
 /* Header
 -----------------------------------------------------------------------------*/
 
 .header {
-  height: 200px;
-  position: relative;
-    
+    height: 200px;
+    position: relative;
 }
 
 .logo img {
@@ -120,16 +120,12 @@ span.phone-number2 {
     width: 100%;
     float: left;
     overflow: hidden;
-    border-bottom: 2px solid;
-    border-bottom-color: #acacac;
     padding-bottom: 58px;
 }
 
 .content {
     padding: 0 0 0 270px;
 }
-
-
 
 .mainlist {
     display: block;
@@ -138,9 +134,6 @@ span.phone-number2 {
     font-size: 0px;
 }
 
-
-
-    
 .mainlist .list-item {
     display: inline-block;
     height: 100%;
@@ -148,11 +141,10 @@ span.phone-number2 {
     vertical-align: top;
     margin-right: 50px;
     font-size: 11px;
-    
-    }
+}
 
-.mainlist .list-item:last-child{
-    margin-right: 0; 
+.mainlist .list-item:last-child {
+    margin-right: 0;
 }
 
 .list-item .name {
@@ -167,15 +159,13 @@ span.phone-number2 {
     margin-bottom: 18px;
 }
 
-
-.img 
-{
+.img {
     width: 78px;
     height: 78px;
     text-align: center;
     overflow: hidden;
     background: #000;
-    display:block;
+    display: block;
     position: absolute;
 }
 
@@ -184,14 +174,11 @@ span.phone-number2 {
     height: 100%;
     display: block;
     position: absolute;
-    left:50%;
+    left: 50%;
     top: 0;
     transform: translateX(-50%);
-    
 }
 
-
-    
 
 /* Left Sidebar
 -----------------------------------------------------------------------------*/
@@ -204,14 +191,11 @@ span.phone-number2 {
     position: relative;
 }
 
-.left-sidebar .list-item  {
+.left-sidebar .list-item {
     width: 200px;
-    left:0;
-   
-    
 }
 
-.list-item a:hover {
+.left-sidebar .list-item a:hover {
     background-color: #707070;
     color: #fff;
 }
@@ -221,6 +205,7 @@ span.phone-number2 {
     font-size: 40px;
     color: #646464;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 
@@ -230,22 +215,24 @@ span.phone-number2 {
 .footer {
     width: 1024px;
     margin: -100px auto 0;
-    height: 100px;
+    height: 59px;
     position: relative;
-    padding-top: 36px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(112, 112, 112, 0.47);
+    border-top-color: #acacac;
 }
 
-.adress a
-{
-    color: #707070;
-    text-decoration: none;  
-}
-.adress
-.job {
+.footer .address {
     display: inline-block;
-    position: relative;
+    vertical-align: top;
+    margin-right: 15px;
 }
 
-.job a {
+.footer a {
     color: #707070;
+    text-decoration: underline;
+}
+
+.address a {
+    text-decoration: none;
 }
