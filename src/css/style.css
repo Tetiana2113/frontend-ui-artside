@@ -56,6 +56,8 @@ h2 {
 
 a {
     cursor: pointer;
+    text-decoration: underline;
+    color: #707070;
 }
 
 ul {
@@ -72,30 +74,27 @@ ul {
     position: relative;
 }
 
-.logo img {
+.header .logo img {
     float: left;
     padding-top: 45px;
     position: absolute;
 }
 
-.phone {
+.header .phone {
     position: absolute;
     top: 45px;
     right: 0;
     display: block;
-}
-
-a.phone {
     text-decoration: none;
     color: #707070;
     font-family: "DIN Light Alternate", sans-serif;
 }
 
-span.phone-number1 {
+.header .phone-number1 {
     font-size: 18px;
 }
 
-span.phone-number2 {
+.header .phone-number2 {
     font-size: 30px;
     display: block;
 }
@@ -127,14 +126,14 @@ span.phone-number2 {
     padding: 0 0 0 270px;
 }
 
-.mainlist {
+.teams {
     display: block;
     width: auto;
     padding-top: 47px;
     font-size: 0px;
 }
 
-.mainlist .list-item {
+.teams .team-members {
     display: inline-block;
     height: 100%;
     width: 210px;
@@ -143,33 +142,33 @@ span.phone-number2 {
     font-size: 11px;
 }
 
-.mainlist .list-item:last-child {
+.teams .team-members:last-child {
     margin-right: 0;
 }
 
-.list-item .name {
+.teams .team-members .name {
     display: block;
-    color: #646464;
-    font-size: 11px;
-    line-height: auto;
-    font-family: "Verdana";
     padding-left: 90px;
     position: relative;
-    min-height: 78px;
     margin-bottom: 18px;
+    color: #646464;
+    min-height: 78px;
+    line-height: auto;
+    font-family: "Verdana";
+    font-size: 11px;
 }
 
-.img {
+.teams .image {
     width: 78px;
     height: 78px;
+    display: block;
+    position: absolute;
     text-align: center;
     overflow: hidden;
     background: #000;
-    display: block;
-    position: absolute;
 }
 
-.img img {
+.teams .image img {
     width: auto;
     height: 100%;
     display: block;
@@ -220,19 +219,11 @@ span.phone-number2 {
     padding-top: 40px;
     border-top: 1px solid rgba(112, 112, 112, 0.47);
     border-top-color: #acacac;
+    color: #707070;
 }
 
 .footer .address {
     display: inline-block;
     vertical-align: top;
     margin-right: 15px;
-}
-
-.footer a {
-    color: #707070;
-    text-decoration: underline;
-}
-
-.address a {
-    text-decoration: none;
 }
